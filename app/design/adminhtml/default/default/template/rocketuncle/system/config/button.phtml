@@ -1,0 +1,22 @@
+<script type="text/javascript">
+	//<![CDATA[
+	function check() {
+		new Ajax.Request('<?php echo $this->getAjaxCheckUrl() ?>', {
+			method:     'get',
+			onSuccess: function(transport){
+				if (transport.responseText){
+					var data = transport.responseText.evalJSON();
+					if (data.success) {
+						$('rocketuncle_general_access_token').value = data.access_token;
+					}
+					else {
+						alert('Cannot get access token, please check your info and try again!');
+					}
+				}
+			}
+		});
+	}
+    //]]>
+</script>
+ 
+<?php echo $this->getButtonHtml() ?>

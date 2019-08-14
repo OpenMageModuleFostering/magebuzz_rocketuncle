@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<config>
+  <tabs>
+    <magebuzz translate="label">
+      <label>MageBuzz Add-Ons</label>
+      <sort_order>200</sort_order>
+    </magebuzz>
+  </tabs>
+  <sections>
+    <rocketuncle translate="label" module="catalog">
+      <class>separator-top</class>
+      <label>RocketUncle</label>
+      <tab>magebuzz</tab>
+      <frontend_type>text</frontend_type>
+      <sort_order>100</sort_order>
+      <show_in_default>1</show_in_default>
+      <show_in_website>1</show_in_website>
+      <show_in_store>0</show_in_store>
+      <groups>
+        <general translate="label">
+          <label>RocketUncle API</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>1</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>0</show_in_store>
+          <fields>
+            <active translate="label">
+              <label>Enable</label>
+              <frontend_type>select</frontend_type>
+              <sort_order>1</sort_order>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </active>
+            <client_id translate="label">
+              <label>Client ID</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>2</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </client_id>
+            <client_secret translate="label">
+              <label>Client Secret</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>3</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </client_secret>
+            <!--<scope translate="label">
+              <label>Scope</label>
+              <frontend_type>select</frontend_type>
+              <sort_order>4</sort_order>
+              <source_model>rocketuncle/system_config_scope</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </scope>-->
+
+            <service translate="label comment">
+              <label>Service Name</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>5</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>	
+              <comment><![CDATA[2_HOURS | 3_HOURS | OFFICE_HOURS | EVENING | 2_WAY_OFFICE_HOURS. <a target="_blank" href="https://gofuture.rocketuncle.com/Bulk/AddBatch">Get your service name</a>]]></comment>
+            </service>
+
+            <pickup_time translate="label comment">
+              <label>Pickup Time</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>6</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>  
+              <comment><![CDATA[Format of Pickup Time is 24h <b>Example :</b> 09:00, 18:30  ]]></comment>
+            </pickup_time>
+						
+						<access_token translate="label">
+							<label>Access Token</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>4</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+						</access_token>
+						<get_access_token>
+							<frontend_type>button</frontend_type>
+							<frontend_model>rocketuncle/adminhtml_system_config_button</frontend_model>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>0</show_in_store>
+						</get_access_token>
+            <weight_unit translate="label">
+              <label>Weight Unit</label>
+              <frontend_type>select</frontend_type>
+              <sort_order>7</sort_order>
+              <source_model>rocketuncle/system_config_weightunit</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </weight_unit>  
+						<test_mode translate="label">
+							<label>Test Mode</label>
+              <frontend_type>select</frontend_type>
+              <sort_order>8</sort_order>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+						</test_mode>
+          </fields>
+        </general>
+        <sender translate="label">
+          <label>Sender Information</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>1</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>0</show_in_store>
+          <fields>
+            <company_name translate="label">
+              <label>Company Name</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>1</sort_order>              
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </company_name>
+            <contact_name translate="label">
+              <label>Contact Name</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>2</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </contact_name>
+            <contact_number translate="label">
+              <label>Contact Number</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>3</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </contact_number>
+            <country_code translate="label">
+              <label>Country Code </label>
+              <frontend_type>text</frontend_type>
+              <sort_order>4</sort_order>              
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </country_code>
+            <postal_code translate="label">
+              <label>Postal Code </label>
+              <frontend_type>text</frontend_type>
+              <sort_order>5</sort_order>              
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </postal_code>
+            <address_sender translate="label comment">
+              <label>Address</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>6</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>                
+            </address_sender>
+            <address_sender2 translate="label comment">
+              <label>Address 2</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>7</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>                
+            </address_sender2>
+          </fields>
+        </sender> 
+      </groups>
+    </rocketuncle>
+  </sections>
+</config>

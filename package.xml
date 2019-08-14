@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Magebuzz_RocketUncle</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Magento and Rocket Uncle Integration</summary>
+    <description>Connect Magento &amp; Rocket Uncle via API. Submit shipment from Magento to Rocket Uncle automatically. </description>
+    <notes>Rocket Uncle 0.1.0</notes>
+    <authors><author><name>Magebuzz</name><user>magebuzz</user><email>magebuzz@gmail.com</email></author></authors>
+    <date>2015-01-13</date>
+    <time>10:01:10</time>
+    <contents><target name="magecommunity"><dir name="Magebuzz"><dir name="Rocketuncle"><dir name="Block"><dir name="Adminhtml"><dir name="Order"><dir name="Grid"><dir name="Renderer"><file name="Rocketstatus.php" hash="09adf39e974dcaf6b3d52cda53b4ac46"/><dir name="Shipment"><file name="Rocketstatus.php" hash="9f92a97a202a4c43719ac97c19d053d6"/></dir></dir></dir></dir><dir name="System"><dir name="Config"><file name="Button.php" hash="0cfe8ba2359b711b4fc2ded38306270e"/></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="e1c0e0f3b8389ff967a47488ea8e3edf"/></dir><dir name="Model"><file name="Observer.php" hash="dc8eb8a48be86a5f49363f38f98a1ca0"/><dir name="System"><dir name="Config"><file name="Scope.php" hash="57e933fde62ddcb1abdd5fa99e16e6a8"/><file name="Weightunit.php" hash="2dfe23ba53834cf141a002aac55a14c0"/></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="RocketuncleController.php" hash="0538bcdc93637d5560b5dbcdb52b0d1a"/></dir><file name="IndexController.php" hash="5d51e90c6fa4d80a92a65919b44c9273"/></dir><dir name="etc"><file name="adminhtml.xml" hash="695906254593b405dacfe716b0184c8f"/><file name="config.xml" hash="7531b4d9e64e8d819b0e059888976a66"/><file name="system.xml" hash="b6cbf72bf7cea3b4110d01c3fedf513f"/></dir><dir name="sql"><dir name="rocketuncle_setup"><file name="mysql4-install-0.1.0.php" hash="f7047bcc5e1d2a602950a332d1d90055"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="rocketuncle.xml" hash="425ad6c3ca864c1dd42da8ed614ee7b0"/></dir><dir name="template"><dir name="rocketuncle"><dir name="sales"><dir name="order"><dir name="invoice"><dir name="create"><file name="tracking.phtml" hash="c6a09d974acdb57a19b4b46292169cf6"/></dir></dir><dir name="shipment"><dir name="create"><file name="items.phtml" hash="43918b4fd23bdb3021c674bd8637df7e"/></dir></dir><dir name="view"><dir name="tab"><file name="info.phtml" hash="7c8945fbcbe5bb09181a643401c6e164"/></dir></dir></dir></dir><dir name="system"><dir name="config"><file name="button.phtml" hash="1bcc3d760173d5f2dc01c680d2bf5789"/></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Magebuzz_Rocketuncle.xml" hash="faf34a510f1918f2291b8e7a860af660"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
